@@ -3,6 +3,7 @@ name: Sync Repos
 on:
   schedule:
     - cron: '* * * * *'  # 每天同步一次
+  workflow_dispatch:
 
 jobs:
   sync:
