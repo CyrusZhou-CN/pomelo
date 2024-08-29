@@ -2,7 +2,7 @@ name: Sync Repos
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天同步一次
+    - cron: '1 0 * * *'  # 每天同步一次
 
 jobs:
   sync:
