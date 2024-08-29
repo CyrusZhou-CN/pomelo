@@ -8,11 +8,12 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
+      # Checkout the source repository (your current repo)
       - uses: actions/checkout@v2
         with:
-          repository: owner/repo
+          repository: CyrusZhou-CN/pomelo
 
-      - name: Push to target repo
+      - name: Add and push to target repo
         run: |
           git remote add target https://github.com/NetEase/pomelo.git
           git push target --all
